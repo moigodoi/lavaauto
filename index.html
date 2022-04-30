@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Lavado de Autos</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> <!-- Para cambiar el incono adjunto a la url-->
+  <!-- Bootstrap Icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+    rel="stylesheet" type="text/css" />
+  <!-- SimpleLightbox plugin CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+</head>
+
+<body id="page-top">
+  <!-- Navbar boostrap-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="#page-top">Lavado de Autos</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Nuestro Landing Page-->
+  <header class="masthead">
+    <div class="container px-4 px-lg-5 h-100">
+      <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-8 align-self-end">
+          <h1 class="text-white font-weight-bold">Somos el mejor servicio de lavado de autos</h1>
+          <hr class="divider" />
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 mb-5">En Lavado de autos nos distinguimos, por que el detalle si cuenta</p>
+          <a class="btn btn-primary btn-xl" href="#services">Nuestros Servicios</a>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- About-->
+  <section class="page-section bg-primary" id="about">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">Lavado de Autos</h2>
+          <hr class="divider" />
+          <p class="text-white-75 mb-4">Somos una empresa dedicada al lavado de autos,Somos una empresa dedicada al
+            lavado de autos,Somos una empresa dedicada al lavado de autos,Somos una empresa dedicada al lavado de autos
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row gx-4 gx-lg-5">
+      <div class="col-lg-4 col-md-4 text-center">
+        <div class="mt-5">
+          <div class="mb-2"><i class="bi-gem fs-1 text-white-75"></i></div>
+          <h3 class="h4 mb-2">Calidad</h3>
+          <p class="text-white-75 mb-0">Nuestros servicios son completos y detallados</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 text-center">
+        <div class="mt-5">
+          <div class="mb-2"><i class="bi-laptop fs-1 text-white-75"></i></div>
+          <h3 class="h4 mb-2">Agendar</h3>
+          <p class="text-white-75 mb-0">Ahora puedes agendar tus servicios desde cualquir dispositivo.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 text-center">
+        <div class="mt-5">
+          <div class="mb-2"><i class="bi-heart fs-1 text-white-75"></i></div>
+          <h3 class="h4 mb-2">Preferencia</h3>
+          <p class="text-white-75 mb-0">Por que nuestros clintes nos prefieren!</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- Services-->
+  <section class="page-section" id="services">
+    <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">Nuestro Servicio</h2>
+      <hr class="divider" />
+
+    </div>
+
+    <div class="container mt-6 mb-6 d-flex justify-content-center">
+      <!--                <form id="mi-formulario"  method="POST">-->
+
+      <form action="" name="fvalida">
+
+        <label for="rut">Rut</label>
+        <input type="number" name="rut" id="rut" maxlength="8" placeholder="Rut sin puntos ni guion">
+
+
+        <label class="form-label">Digito Verificador</label>
+        <input type="text" id="fdigit" name="fdigit" maxlength="1" col=1 row=1 placeholder="N verificador">
+
+
+        <br><label class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" maxlength="50" REQUIERED>
+
+        <label class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" maxlength="50" REQUIERED>
+
+        <label class="form-label">Direccion</label>
+        <input type="text" class="form-control" REQUIERED id="adress" name="adress" placeholder="1234 Alameda"
+          maxlength="100">
+
+
+        <label class="form-label">Region</label>
+
+        <select id="regiones" class="form-select"></select>
+        <!--
+          <input type="text" class="form-control" id="comuna" REQUIERED>
+-->
+        <br>
+        <label class="form-label">Comuna</label>
+        <select id="comunas" class="form-select"></select>
+        <!--
+        <input type="text" class="form-control" id="comuna" REQUIERED>
+-->
+        <br>
+        <label class="form-label">Vehiculo</label>
+        <select id="typecar" class="form-select">
+          <option>Furgon</option>
+          <option>Automovil</option>
+          <option>Camion</option>
+          <option>Camioneta</option>
+          <option>Moto</option>
+
+        </select>
+
+        <label class="form-label">Marca</label>
+        <select id="typemarca" class="form-select">
+          <option>Seleccione Marca Ej. CHEVROLET</option>
+          <option>CHEVROLET</option>
+          <option>HYUNDAI</option>
+          <option>TOYOTA</option>
+          <option>NISSAN</option>
+          <option>SUZUKI</option>
+          <option>KIA MOTORS</option>
+          <option>PEUGEOT</option>
+          <option>MAZDA</option>
+          <option>FORD</option>
+          <option>VOLKSWAGEN</option>
+        </select>
+
+        <!--                        <input type="text" REQUIERED class="form-control" id="marca" placeholder="Ej Chevrolet"> -->
+
+        <label class="form-label">Modelo</label>
+        <input type="text" class="form-control" id="modelo" placeholder="Ej CORSA" REQUIERED>
+
+        <label class="form-label">Año</label>
+        <select id="typeyear" class="form-select">
+          <option>Ingrese Año</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+          <option>2009</option>
+          <option>2008</option>
+          <option>2007</option>
+          <option>2006</option>
+          <option>2005</option>
+          <option>2004</option>
+          <option>2003</option>
+          <option>2002</option>
+          <option>2001</option>
+          <option>2000</option>
+          <option>1999</option>
+          <option>1998</option>
+          <option>1997</option>
+          <option>1996</option>
+          <option>1995</option>
+          <option>1994</option>
+          <option>1993</option>
+          <option>1992</option>
+          <option>1991</option>
+          <option>1990</option>
+          <option>1985</option>
+          <option>1980</option>
+          <option>1975</option>
+          <option>1970</option>
+          <option>1965</option>
+          <option>1960</option>
+        </select>
+
+        <!--                        <label for="inputZip" class="form-label">Año</label>
+
+                        <input type="number" class="form-control" id="year" placeholder="Año fabricacion">
+-->
+        <label class="form-label">¿Revision tecnica al dia?</label>
+        <select id="typertecnica" class="form-select">
+          <option value="si">Seleccione Si/No</option>
+          <option value="si">si</option>
+          <option value="no">no</option>
+        </select>
+
+
+        <!--          <label class="form-check-label">¿Revision tecnica al dia?</label>
+
+
+          <input class="form-check-input" type="checkbox" role="switch" id="rtecnica">  -->
+        <br>
+
+
+        <!--                       <label class="form-check-label"  for="flexRadioDefault1"> -->
+        <label>
+          <img src="/assets/img/exterior.ico" alt="Lavado Exterior">
+          Lavado Exterior Interior $7000
+        </label>
+        <!--          <input type="radio" name="flexRadioDefault1" id="flexRadioDefault1"> -->
+
+        <!--                       <br><label class="form-check-label1" for="flexRadioDefault2"> -->
+        <br><label>
+          <img src="/assets/img/motor.ico" alt="Lavado de Motor">
+          Lavado de Motor $15000
+        </label>
+        <!--          <input type="radio" name="flexRadioDefault2" id="flexRadioDefault2"> -->
+
+        <label class="form-label">Tipo de Servicio</label>
+        <select id="typetiposer" class="form-select">
+          <option value="si">Seleccione Servicio</option>
+          <option value="si">Lavado Exterior Interior $7000</option>
+          <option value="no">Lavado de Motor $15000</option>
+          <option value="no">Ambos Servicios</option>
+        </select>
+
+
+        <br><label class="form-label">Encargado</label>
+        <select id="Encargado" class="form-select">
+          <option>Seleccione Encargado</option>
+          <option>Encargado 1</option>
+          <option>Encargado 2</option>
+          <option>Encargado 3</option>
+          <option>Encargado 4</option>
+          <option>Lavalo tu!</option>
+
+        </select>
+        <label> Fecha </label>
+        <input type="date" id="fecha" requiered>
+        <label> Hora </label>
+        <input type="time" id="hora" requiered>
+
+        <br><input type="button" value="Calcular" onclick="valida_envia()" </input>
+
+      </form>
+
+      <!-- 
+                    rut = rut + df
+                    nombre= name
+                    apellido= lastname
+                    direccion= adress
+                    comuna= comuna
+                    vehiculo= typecar 
+                    marca= marca 
+                    modelo= Modelo
+                    a;o  = year
+                    revision tecnica (boolean)  = rtecnica
+
+
+
+                   -->
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Contact-->
+  <section class="page-section" id="contact">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">
+          <h2 class="mt-0"><strong>Contactanos</strong></h2>
+          <hr class="divider" />
+          <p class="text-muted mb-5">Si deseas comunicarte, hazlo en cualquiera de nuestras redes sociales o suscribete
+          </p>
+        </div>
+      </div>
+      <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+        <div class="col-lg-6">
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+  <!-- Footer-->
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="http://facebook.com"" role=" button"><i
+            class="bi bi-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button">
+          <i class="bi bi-twitter"></i> </a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/?hl=es" role="button"><i
+            class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+            class="bi bi-instagram"></i></a>
+
+        <!--Linkedin  -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com" role="button"><i
+            class="bi bi-linkedin"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>¿Quieres recibir las ultimas novedades? Suscribete</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Tu Email</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribirse
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+      </section>
+      <!-- Section: Text -->
+
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Lavado de Autos
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- SimpleLightbox plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  <!-- jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
